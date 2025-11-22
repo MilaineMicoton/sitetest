@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+header {
+    height: 20vh;
+    background-image: url(/BandeauLogoSitePreps.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(94, 58, 7);
+}
+.liensVerticaux {
+    border: solid;
+    border-color: red;
+}
+
+a:active {
+    .burger-menu {
+        display: none;
+    }
+    }
+
+img {
+    width: 300px;
+    height: auto;
+}
+
+/* largeur tablettes et plus*/
+
+@media (min-width:451px) {
+        .liensVerticaux {
+        display: none;
+        }
+        .burger-menu {
+        display: none;
+        }
+        .navmenu {
+            display: flex;
+            justify-content: end;
+        }
+        .liensHorizontaux {
+        display: flex;
+        width: 50%;
+        margin-top: 27%;
+        justify-content: space-evenly;
+        }
+        a {
+            font-size: 2rem;
+        }
+
+
+        
+}
+
+/* largeur portable */
+
+@media (max-width:450px) {
+    .navmenu {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        margin-right: 10px;
+        padding-top: 2px;
+        padding-left: 10px;
+    }
+    a {
+        font-size: 1rem;
+    }
+    .liensHorizontaux {
+        display: none;
+        
+    }
+}
